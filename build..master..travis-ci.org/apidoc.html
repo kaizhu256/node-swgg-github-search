@@ -1,0 +1,574 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    overflow-wrap: break-word;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/kaizhu256/node-swgg-github-search"
+
+    >swgg-github-search (v2018.4.21)</a>
+</h1>
+<h4>this zero-dependency package will provide a (nodejs-compatible) swagger-client for github-search's web-apis, with a working web-demo</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.swgg-github-search">module swgg-github-search</a><ol>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.swgg.apiDict">module swgg.apiDict</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Flegacy_2Fissues_2Fsearch_2F_7Bowner_7D_2F_7Brepository_7D_2F_7Bstate_7D_2F_7Bkeyword_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Flegacy_2Fissues_2Fsearch_2F_7Bowner_7D_2F_7Brepository_7D_2F_7Bstate_7D_2F_7Bkeyword_7D_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Flegacy_2Frepos_2Fsearch_2F_7Bkeyword_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Flegacy_2Frepos_2Fsearch_2F_7Bkeyword_7D_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Flegacy_2Fuser_2Femail_2F_7Bemail_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Flegacy_2Fuser_2Femail_2F_7Bemail_7D_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Flegacy_2Fuser_2Fsearch_2F_7Bkeyword_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Flegacy_2Fuser_2Fsearch_2F_7Bkeyword_7D_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fcode_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Fcode_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fcommits_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Fcommits_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fissues_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Fissues_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Flabels_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Flabels_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Frepositories_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Frepositories_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Ftopics_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Ftopics_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fusers_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Fusers_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.swgg-github-search" id="apidoc.module.swgg-github-search">module swgg-github-search</a></h1>
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.swgg.apiDict" id="apidoc.module.swgg.apiDict">module swgg.apiDict</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Flegacy_2Fissues_2Fsearch_2F_7Bowner_7D_2F_7Brepository_7D_2F_7Bstate_7D_2F_7Bkeyword_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Flegacy_2Fissues_2Fsearch_2F_7Bowner_7D_2F_7Brepository_7D_2F_7Bstate_7D_2F_7Bkeyword_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Flegacy_2Fissues_2Fsearch_2F_7Bowner_7D_2F_7Brepository_7D_2F_7Bstate_7D_2F_7Bkeyword_7D_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Flegacy_2Fissues_2Fsearch_2F_7Bowner_7D_2F_7Brepository_7D_2F_7Bstate_7D_2F_7Bkeyword_7D_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /legacy/issues/search/{}/{}/{}/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Flegacy_2Fissues_2Fsearch_2F_7Bowner_7D_2F_7Brepository_7D_2F_7Bstate_7D_2F_7Bkeyword_7D_20GET&quot;].
+ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.v3+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repository&quot;: &quot;repository&quot;,
+        &quot;state&quot;: &quot;state&quot;,
+        &quot;keyword&quot;: &quot;keyword&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Flegacy_2Frepos_2Fsearch_2F_7Bkeyword_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Flegacy_2Frepos_2Fsearch_2F_7Bkeyword_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Flegacy_2Frepos_2Fsearch_2F_7Bkeyword_7D_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Flegacy_2Frepos_2Fsearch_2F_7Bkeyword_7D_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /legacy/repos/search/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Flegacy_2Frepos_2Fsearch_2F_7Bkeyword_7D_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.v3+json&quot;
+        ],
+        &quot;keyword&quot;: &quot;keyword&quot;,
+        &quot;language&quot;: &quot;abcd1234&quot;,
+        &quot;start_page&quot;: &quot;abcd1234&quot;,
+        &quot;sort&quot;: &quot;abcd1234&quot;,
+        &quot;order&quot;: &quot;abcd1234&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Flegacy_2Fuser_2Femail_2F_7Bemail_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Flegacy_2Fuser_2Femail_2F_7Bemail_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Flegacy_2Fuser_2Femail_2F_7Bemail_7D_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Flegacy_2Fuser_2Femail_2F_7Bemail_7D_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /legacy/user/email/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Flegacy_2Fuser_2Femail_2F_7Bemail_7D_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.v3+json&quot;
+        ],
+        &quot;email&quot;: &quot;email&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Flegacy_2Fuser_2Fsearch_2F_7Bkeyword_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Flegacy_2Fuser_2Fsearch_2F_7Bkeyword_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Flegacy_2Fuser_2Fsearch_2F_7Bkeyword_7D_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Flegacy_2Fuser_2Fsearch_2F_7Bkeyword_7D_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /legacy/user/search/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Flegacy_2Fuser_2Fsearch_2F_7Bkeyword_7D_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.v3+json&quot;
+        ],
+        &quot;keyword&quot;: &quot;keyword&quot;,
+        &quot;start_page&quot;: &quot;abcd1234&quot;,
+        &quot;sort&quot;: &quot;abcd1234&quot;,
+        &quot;order&quot;: &quot;abcd1234&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fcode_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fcode_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Fcode_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Fsearch_2Fcode_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /search/code&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Fsearch_2Fcode_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;q&quot;: &quot;abcd1234&quot;,
+        &quot;sort&quot;: &quot;abcd1234&quot;,
+        &quot;order&quot;: &quot;desc&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fcommits_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fcommits_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Fcommits_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Fsearch_2Fcommits_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /search/commits&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Fsearch_2Fcommits_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;q&quot;: &quot;abcd1234&quot;,
+        &quot;sort&quot;: &quot;abcd1234&quot;,
+        &quot;order&quot;: &quot;desc&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fissues_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fissues_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Fissues_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Fsearch_2Fissues_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /search/issues&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Fsearch_2Fissues_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;q&quot;: &quot;abcd1234&quot;,
+        &quot;sort&quot;: &quot;abcd1234&quot;,
+        &quot;order&quot;: &quot;desc&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Flabels_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Fsearch_2Flabels_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Flabels_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Fsearch_2Flabels_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /search/labels&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Fsearch_2Flabels_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;repository_id&quot;: 0,
+        &quot;q&quot;: &quot;abcd1234&quot;,
+        &quot;sort&quot;: &quot;created&quot;,
+        &quot;order&quot;: &quot;desc&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Frepositories_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Fsearch_2Frepositories_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Frepositories_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Fsearch_2Frepositories_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /search/repositories&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Fsearch_2Frepositories_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;q&quot;: &quot;abcd1234&quot;,
+        &quot;sort&quot;: &quot;abcd1234&quot;,
+        &quot;order&quot;: &quot;desc&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Ftopics_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Fsearch_2Ftopics_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Ftopics_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Fsearch_2Ftopics_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /search/topics&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Fsearch_2Ftopics_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;q&quot;: &quot;abcd1234&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fusers_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Fsearch_2Fusers_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fsearch_2Fusers_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Fsearch_2Fusers_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /search/users&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Fsearch_2Fusers_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;q&quot;: &quot;abcd1234&quot;,
+        &quot;sort&quot;: &quot;abcd1234&quot;,
+        &quot;order&quot;: &quot;desc&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
